@@ -1,0 +1,103 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Body Styling with Animated Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Animated Background Keyframes */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Label Styling */
+label {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 320px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #fff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #ff6e7f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff3b53;
+    transform: translateY(-2px);
+}
+
+/* Image Styling */
+img#image {
+    margin-top: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    display: block; /* Ensure it is a block element */
+    animation: fadeIn 1s ease;
+}
+
+/* Image Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Container Alignment */
+#image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
